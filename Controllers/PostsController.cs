@@ -82,7 +82,7 @@ namespace MyBlogAPI.Controllers
             }
 
             _mapper.Map(postUpdateDto, postModelFromRepo);
-            // for now - UpdatePost doing nothing, but it is nice to implement it for future, if something will change
+           
             _repository.UpdatePost(postModelFromRepo);
 
             _repository.SaveChanges();
